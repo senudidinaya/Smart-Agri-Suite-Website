@@ -57,7 +57,7 @@ const TechStack = () => {
     <section className="section-padding relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <img src="/images/plantation.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.06] dark:opacity-[0.08]" />
+        <img src={`${import.meta.env.BASE_URL}images/plantation.png`} alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.06] dark:opacity-[0.08]" />
         <div className="absolute inset-0 bg-gradient-to-b from-agri-earth via-agri-earth/95 to-agri-earth dark:from-agri-dark dark:via-agri-dark/95 dark:to-agri-dark"></div>
       </div>
       {/* Decorative */}

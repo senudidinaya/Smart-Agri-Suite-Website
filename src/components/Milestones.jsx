@@ -67,7 +67,7 @@ const Milestones = () => {
   return (
     <section id="milestones" className="section-padding relative overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img src="/images/tea-hills.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.06] dark:opacity-[0.1]" />
+        <img src={`${import.meta.env.BASE_URL}images/tea-hills.png`} alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.06] dark:opacity-[0.1]" />
         <div className="absolute inset-0 bg-gradient-to-b from-agri-earth via-agri-earth/95 to-agri-earth dark:from-agri-dark dark:via-agri-dark/95 dark:to-agri-dark"></div>
       </div>
 

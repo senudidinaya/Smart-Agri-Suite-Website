@@ -14,7 +14,7 @@ const About = () => {
     <section id="about" className="section-padding relative overflow-hidden">
       {/* Full background image */}
       <div className="absolute inset-0 z-0">
-        <img src="/images/spice-leaves.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] dark:opacity-[0.12]" />
+        <img src={`${import.meta.env.BASE_URL}images/spice-leaves.png`} alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] dark:opacity-[0.12]" />
         <div className="absolute inset-0 bg-gradient-to-b from-agri-earth via-agri-earth/95 to-agri-earth dark:from-agri-dark dark:via-agri-dark/95 dark:to-agri-dark"></div>
       </div>
 
@@ -59,12 +59,12 @@ const About = () => {
           <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="relative">
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4 pt-8">
-                <motion.img whileHover={{ scale: 1.03 }} src="/images/cinnamon.png" alt="Cinnamon sticks" className="w-full h-44 object-cover rounded-2xl shadow-xl ring-2 ring-white/50 dark:ring-slate-700/50" />
-                <motion.img whileHover={{ scale: 1.03 }} src="/images/plantation.png" alt="Spice plantation" className="w-full h-56 object-cover rounded-2xl shadow-xl ring-2 ring-white/50 dark:ring-slate-700/50" />
+                <motion.img whileHover={{ scale: 1.03 }} src={`${import.meta.env.BASE_URL}images/cinnamon.png`} alt="Cinnamon sticks" className="w-full h-44 object-cover rounded-2xl shadow-xl ring-2 ring-white/50 dark:ring-slate-700/50" />
+                <motion.img whileHover={{ scale: 1.03 }} src={`${import.meta.env.BASE_URL}images/plantation.png`} alt="Spice plantation" className="w-full h-56 object-cover rounded-2xl shadow-xl ring-2 ring-white/50 dark:ring-slate-700/50" />
               </div>
               <div className="space-y-4">
-                <motion.img whileHover={{ scale: 1.03 }} src="/images/pepper.png" alt="Black pepper vine" className="w-full h-56 object-cover rounded-2xl shadow-xl ring-2 ring-white/50 dark:ring-slate-700/50" />
-                <motion.img whileHover={{ scale: 1.03 }} src="/images/turmeric.png" alt="Turmeric roots" className="w-full h-44 object-cover rounded-2xl shadow-xl ring-2 ring-white/50 dark:ring-slate-700/50" />
+                <motion.img whileHover={{ scale: 1.03 }} src={`${import.meta.env.BASE_URL}images/pepper.png`} alt="Black pepper vine" className="w-full h-56 object-cover rounded-2xl shadow-xl ring-2 ring-white/50 dark:ring-slate-700/50" />
+                <motion.img whileHover={{ scale: 1.03 }} src={`${import.meta.env.BASE_URL}images/turmeric.png`} alt="Turmeric roots" className="w-full h-44 object-cover rounded-2xl shadow-xl ring-2 ring-white/50 dark:ring-slate-700/50" />
               </div>
             </div>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">

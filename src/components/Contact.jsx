@@ -7,7 +7,7 @@ const Contact = () => {
     <section id="contact" className="section-padding relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <img src="/images/spice-bowls.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] dark:opacity-[0.15]" />
+        <img src={`${import.meta.env.BASE_URL}images/spice-bowls.png`} alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] dark:opacity-[0.15]" />
         <div className="absolute inset-0 bg-gradient-to-t from-agri-earth via-white/80 to-agri-earth dark:from-agri-dark dark:via-agri-slate/90 dark:to-agri-dark"></div>
       </div>
       <div className="absolute top-0 right-0 w-64 h-64 bg-agri-emerald/10 rounded-full blur-[100px]"></div>

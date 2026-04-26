@@ -15,7 +15,7 @@ const Methodology = () => {
     <section id="methodology" className="section-padding relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <img src="/images/cardamom.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.07] dark:opacity-[0.1]" />
+        <img src={`${import.meta.env.BASE_URL}images/cardamom.png`} alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.07] dark:opacity-[0.1]" />
         <div className="absolute inset-0 bg-gradient-to-br from-white/90 via-emerald-50/70 to-white/90 dark:from-agri-slate/90 dark:via-agri-slate/80 dark:to-agri-slate/90"></div>
       </div>
       {/* Decorative glow */}

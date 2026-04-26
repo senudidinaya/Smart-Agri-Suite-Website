@@ -20,7 +20,7 @@ const Team = () => {
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/spice-farm.png"
+          src={`${import.meta.env.BASE_URL}images/spice-farm.png`}
           alt="Spice farm landscape"
           className="absolute inset-0 w-full h-full object-cover opacity-[0.04] dark:opacity-[0.08]"
         />

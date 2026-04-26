@@ -50,7 +50,7 @@ const Documents = () => {
   return (
     <section id="documents" className="section-padding relative overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img src="/images/spice-bowls.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.05] dark:opacity-[0.08]" />
+        <img src={`${import.meta.env.BASE_URL}images/spice-bowls.png`} alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.05] dark:opacity-[0.08]" />
         <div className="absolute inset-0 bg-gradient-to-b from-white via-white/98 to-white dark:from-agri-slate/90 dark:via-agri-slate/95 dark:to-agri-slate/90"></div>
       </div>
 

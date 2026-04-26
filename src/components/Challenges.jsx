@@ -14,7 +14,7 @@ const Challenges = () => {
     <section className="section-padding relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <img src="/images/spice-farm.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] dark:opacity-[0.12]" />
+        <img src={`${import.meta.env.BASE_URL}images/spice-farm.png`} alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] dark:opacity-[0.12]" />
         <div className="absolute inset-0 bg-gradient-to-br from-white/90 via-white/85 to-amber-50/80 dark:from-agri-slate/90 dark:via-agri-slate/85 dark:to-agri-slate/80"></div>
       </div>
 

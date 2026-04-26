@@ -15,7 +15,7 @@ const Timeline = () => {
     <section className="section-padding relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <img src="/images/cinnamon.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.05] dark:opacity-[0.08]" />
+        <img src={`${import.meta.env.BASE_URL}images/cinnamon.png`} alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.05] dark:opacity-[0.08]" />
         <div className="absolute inset-0 bg-gradient-to-b from-white/92 via-amber-50/60 to-white/92 dark:from-agri-slate/92 dark:via-agri-slate/80 dark:to-agri-slate/92"></div>
       </div>
 

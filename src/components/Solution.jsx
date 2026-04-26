@@ -14,7 +14,7 @@ const Solution = () => {
     <section id="solution" className="section-padding relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <img src="/images/tea-hills.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] dark:opacity-[0.1]" />
+        <img src={`${import.meta.env.BASE_URL}images/tea-hills.png`} alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] dark:opacity-[0.1]" />
         <div className="absolute inset-0 bg-gradient-to-b from-white/92 via-emerald-50/80 to-white/92 dark:from-agri-dark/92 dark:via-agri-slate/80 dark:to-agri-dark/92"></div>
       </div>
       {/* Decorative circles */}

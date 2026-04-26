@@ -23,7 +23,7 @@ const Research = () => {
             viewport={{ once: true }}
             className="group relative rounded-3xl overflow-hidden shadow-2xl min-h-[420px]"
           >
-            <img src="/images/plantation.png" alt="Sri Lankan spice plantation" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+            <img src={`${import.meta.env.BASE_URL}images/plantation.png`} alt="Sri Lankan spice plantation" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-transparent"></div>
             <div className="relative p-8 md:p-10 h-full flex flex-col justify-end">
               <div className="inline-flex items-center gap-2 bg-blue-500/20 backdrop-blur-md w-fit px-4 py-2 rounded-full border border-blue-400/30 text-blue-300 text-sm font-bold mb-4">
@@ -43,7 +43,7 @@ const Research = () => {
             transition={{ delay: 0.15 }}
             className="group relative rounded-3xl overflow-hidden shadow-2xl min-h-[420px]"
           >
-            <img src="/images/market.png" alt="Spice market" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+            <img src={`${import.meta.env.BASE_URL}images/market.png`} alt="Spice market" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-transparent"></div>
             <div className="relative p-8 md:p-10 h-full flex flex-col justify-end">
               <div className="inline-flex items-center gap-2 bg-red-500/20 backdrop-blur-md w-fit px-4 py-2 rounded-full border border-red-400/30 text-red-300 text-sm font-bold mb-4">
@@ -64,7 +64,7 @@ const Research = () => {
           transition={{ delay: 0.2 }}
           className="group relative rounded-3xl overflow-hidden shadow-2xl min-h-[260px]"
         >
-          <img src="/images/spice-farm.png" alt="Spice farm" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+          <img src={`${import.meta.env.BASE_URL}images/spice-farm.png`} alt="Spice farm" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/75 to-transparent"></div>
           <div className="relative p-8 md:p-10 h-full flex flex-col justify-end">
             <div className="inline-flex items-center gap-2 bg-amber-500/20 backdrop-blur-md w-fit px-4 py-2 rounded-full border border-amber-400/30 text-amber-300 text-sm font-bold mb-4">

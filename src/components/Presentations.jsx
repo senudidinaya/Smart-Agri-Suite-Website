@@ -44,7 +44,7 @@ const Presentations = () => {
   return (
     <section id="slides" className="section-padding relative overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img src="/images/cinnamon.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.05] dark:opacity-[0.08]" />
+        <img src={`${import.meta.env.BASE_URL}images/cinnamon.png`} alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.05] dark:opacity-[0.08]" />
         <div className="absolute inset-0 bg-gradient-to-b from-agri-earth via-agri-earth/96 to-agri-earth dark:from-agri-dark dark:via-agri-dark/96 dark:to-agri-dark"></div>
       </div>
 
