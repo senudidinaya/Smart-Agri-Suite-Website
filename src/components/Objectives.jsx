@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Globe2, BarChart3, Package, DollarSign, Smartphone } from 'lucide-react';
+import { Globe2, BarChart3, Package, DollarSign, Mic } from 'lucide-react';
 
 const objectives = [
   { text: 'To develop a globally deployable, GEE-based engine for the autonomous classification of arable and idle land.', icon: <Globe2 size={24} /> },
   { text: 'To formulate an interpretable suitability scoring framework for high-value crops based on multidimensional geospatial data.', icon: <BarChart3 size={24} /> },
   { text: 'To implement a predictive stock management system that mitigates supply chain disruptions.', icon: <Package size={24} /> },
   { text: 'To design a dynamic pricing model that stabilizes income for smallholder farmers.', icon: <DollarSign size={24} /> },
-  { text: 'To deliver a seamless, mobile-first user experience that encourages high adoption rates among rural communities.', icon: <Smartphone size={24} /> },
+  { text: 'To evaluate cultivator intent and trustworthiness through a two-gated screening workflow that supports safer land mobilization decisions.', icon: <Mic size={24} /> },
 ];
 
 const Objectives = () => {

@@ -1,22 +1,22 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, Users } from 'lucide-react';
+import { GraduationCap, Users, Mail } from 'lucide-react';
 
 const supervisors = [
-  { name: 'Mr. Dhammika De Silva', role: 'Project Supervisor' },
-  { name: 'Dr. Lakmini Abeywardhana', role: 'Co-Supervisor' },
+  { name: 'Mr. Dhammika De Silva', role: 'Project Supervisor', email: 'dhammika.d@sliit.lk' },
+  { name: 'Dr. Lakmini Abeywardhana', role: 'Co-Supervisor', email: 'lakmini.a@sliit.lk' },
 ];
 
 const team = [
-  { name: 'Eranga Bowatte', role: 'Team Leader', initials: 'EB', gradient: 'from-agri-emerald to-teal-500' },
-  { name: 'Chamindu Navod', role: 'Team Member', initials: 'CN', gradient: 'from-blue-500 to-cyan-500' },
-  { name: 'Janakalani Maheepala', role: 'Team Member', initials: 'JM', gradient: 'from-purple-500 to-violet-500' },
-  { name: 'Senudi Rupasinghe', role: 'Team Member', initials: 'SR', gradient: 'from-amber-500 to-orange-500' },
+  { name: 'Eranga Bowatte', role: 'Team Leader · Pricing Component', initials: 'EB', gradient: 'from-agri-emerald to-teal-500', email: 'eranga.b@example.com' },
+  { name: 'Chamindu Navod', role: 'Team Member · Idle Land Component', initials: 'CN', gradient: 'from-blue-500 to-cyan-500', email: 'chamindu.n@example.com' },
+  { name: 'Janakalani Maheepala', role: 'Team Member · Stock Component', initials: 'JM', gradient: 'from-purple-500 to-violet-500', email: 'janakalani.m@example.com' },
+  { name: 'Senudi Rupasinghe', role: 'Team Member · Cultivator Intent Component', initials: 'SR', gradient: 'from-amber-500 to-orange-500', email: 'senudi.r@example.com' },
 ];
 
 const Team = () => {
   return (
-    <section id="team" className="section-padding relative overflow-hidden">
+    <section id="about-us" className="section-padding relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img
@@ -34,7 +34,7 @@ const Team = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-black text-slate-800 dark:text-white mb-4">
-            Our <span className="text-gradient">Team</span>
+            About <span className="text-gradient">Us</span>
           </h2>
           <p className="text-lg text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
             The dedicated researchers and advisors behind the Smart Agri-Suite framework.
@@ -62,7 +62,10 @@ const Team = () => {
                   <GraduationCap size={36} className="text-white" />
                 </div>
                 <h4 className="text-xl font-bold text-slate-800 dark:text-white mb-1">{sup.name}</h4>
-                <p className="text-agri-emerald font-semibold text-sm uppercase tracking-wider">{sup.role}</p>
+                <p className="text-agri-emerald font-semibold text-sm uppercase tracking-wider mb-3">{sup.role}</p>
+                <a href={`mailto:${sup.email}`} className="inline-flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400 hover:text-agri-emerald dark:hover:text-agri-emerald transition-colors">
+                  <Mail size={14} />{sup.email}
+                </a>
               </motion.div>
             ))}
           </div>
@@ -89,7 +92,10 @@ const Team = () => {
                   <span className="text-white font-black text-lg">{member.initials}</span>
                 </div>
                 <h4 className="text-lg font-bold text-slate-800 dark:text-white mb-1">{member.name}</h4>
-                <p className="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{member.role}</p>
+                <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-3">{member.role}</p>
+                <a href={`mailto:${member.email}`} className="inline-flex items-center gap-1.5 text-xs text-slate-400 dark:text-slate-500 hover:text-agri-emerald dark:hover:text-agri-emerald transition-colors break-all">
+                  <Mail size={12} />{member.email}
+                </a>
               </motion.div>
             ))}
           </div>

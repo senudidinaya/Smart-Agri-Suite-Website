@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import { Database, Brain, Plug, FlaskConical, Rocket } from 'lucide-react';
 
 const steps = [
-  { icon: <Database size={28} />, title: 'Data Acquisition & Engineering', desc: 'Extraction of satellite imagery and climatic data via Google Earth Engine; compilation of historical market pricing datasets.', color: 'from-blue-500 to-cyan-500' },
-  { icon: <Brain size={28} />, title: 'Model Development', desc: 'Training and hyperparameter tuning of XGBoost classifiers for land analysis and quantile regression models for financial forecasting.', color: 'from-purple-500 to-violet-500' },
-  { icon: <Plug size={28} />, title: 'System Integration', desc: 'Connecting the Python/FastAPI backend with the React Native mobile frontend via asynchronous pipelines.', color: 'from-agri-emerald to-teal-500' },
-  { icon: <FlaskConical size={28} />, title: 'Validation & Testing', desc: 'Rigorous field testing and cross-validation in diverse agroclimatic zones (e.g., Malabe, Sri Lanka, and Kerala, India).', color: 'from-amber-500 to-orange-500' },
-  { icon: <Rocket size={28} />, title: 'Deployment', desc: 'Rollout of the mobile application and continuous iteration based on user feedback and system latency metrics.', color: 'from-rose-500 to-pink-500' },
+  { icon: <Database size={28} />, title: 'Data Collection & Preprocessing', desc: 'Sentinel-2 satellite imagery extracted via Google Earth Engine; historical spice pricing CSV datasets compiled; call recordings and interview video footage gathered for cultivator intention analysis.', color: 'from-blue-500 to-cyan-500' },
+  { icon: <Brain size={28} />, title: 'Feature Engineering & Model Development', desc: 'Extracted 15-variable spectral indices (NDVI, EVI, SAVI, NDWI, elevation, slope, raw Sentinel-2 bands) for land classification; audio paralinguistic features for cultivator intent; trained XGBoost models for land and stock prediction; price forecasting and audio/video classifiers per component.', color: 'from-purple-500 to-violet-500' },
+  { icon: <Plug size={28} />, title: 'Microservice Architecture & Integration', desc: 'Four independent backend modules built — FastAPI (Python) for idle land analysis, stock prediction, and cultivator screening; Node.js/Express for smart pricing — all unified under a single React Native/Expo mobile frontend via REST APIs.', color: 'from-agri-emerald to-teal-500' },
+  { icon: <FlaskConical size={28} />, title: 'Validation & Testing', desc: 'Phase-4 evaluation yielded 9/9 test cases passed with an average score of 4.69/5.0 (Groq LLM — llama-3.3-70b-versatile). Unit and integration testing performed per microservice with ~1.4 s average LLM response latency.', color: 'from-amber-500 to-orange-500' },
+  { icon: <Rocket size={28} />, title: 'Deployment', desc: 'Mobile application deployed via Expo for cross-platform iOS/Android access. FastAPI and Express backends served with Uvicorn; PostgreSQL + PostGIS and MongoDB used as the hybrid data persistence layer.', color: 'from-rose-500 to-pink-500' },
 ];
 
 const Methodology = () => {

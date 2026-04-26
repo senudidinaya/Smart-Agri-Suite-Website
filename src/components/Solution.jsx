@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Lightbulb, Satellite, ShieldCheck, DollarSign, Package } from 'lucide-react';
+import { Lightbulb, Satellite, TrendingUp, Package, Mic } from 'lucide-react';
 
 const modules = [
-  { icon: <Satellite size={28} />, title: 'The Global Analyzer', desc: 'Live satellite classification to map idle lands and calculate interpretative crop suitability scores.', gradient: 'from-emerald-500 to-teal-600' },
-  { icon: <ShieldCheck size={28} />, title: 'Trust & Security Layer', desc: 'A multi-gated intent analysis system ensuring secure and credible land mobilization.', gradient: 'from-blue-500 to-indigo-600' },
-  { icon: <DollarSign size={28} />, title: 'Dynamic Pricing Engine', desc: 'Algorithmic price adjustments based on real-time market demand and regional stock availability.', gradient: 'from-amber-500 to-orange-600' },
-  { icon: <Package size={28} />, title: 'Smart Stock Management', desc: 'Probabilistic forecasting to provide actionable alerts for inventory preparation.', gradient: 'from-purple-500 to-violet-600' },
+  { icon: <Satellite size={28} />, title: 'Idle Land Mobilization', desc: 'Satellite-driven land classification with GEE and XGBoost to identify underutilized parcels and generate crop suitability insights.', gradient: 'from-emerald-500 to-teal-600' },
+  { icon: <TrendingUp size={28} />, title: 'Smart Marketplace & Pricing Support', desc: 'Farmer-facing pricing, demand, logistics, and profit analytics that support stronger market participation for Sri Lankan spice growers.', gradient: 'from-amber-500 to-orange-600' },
+  { icon: <Package size={28} />, title: 'Smart Predictive Stock & Alerts', desc: 'Forecast-based inventory monitoring that helps anticipate shortages, optimize stock handling, and plan seasonal supply movements.', gradient: 'from-purple-500 to-violet-600' },
+  { icon: <Mic size={28} />, title: 'Cultivator Intention Analyzer', desc: 'Voice and interview analysis pipeline for assessing cultivator intent, truthfulness, and recommendation readiness through two decision gates.', gradient: 'from-rose-500 to-pink-600' },
 ];
 
 const Solution = () => {

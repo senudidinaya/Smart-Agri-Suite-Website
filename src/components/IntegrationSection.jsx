@@ -1,49 +1,49 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ShieldCheck, Truck, ScanFace, FileText, ArrowRight } from 'lucide-react';
+import { Map, TrendingUp, Package, Mic, ArrowRight } from 'lucide-react';
 
 const IntegrationSection = () => {
   const modules = [
     {
       id: 1,
-      title: "Trustworthiness & Intent",
-      author: "Subodhi",
-      icon: <ShieldCheck size={32} className="text-blue-400" />,
-      description: "A multi-step verification form using the 'Two-Gated' architecture. Handles user credibility screening prior to land listing.",
+      title: "Idle Land Mobilization",
+      author: "Chamindu",
+      icon: <Map size={32} className="text-blue-400" />,
+      description: "Uses Google Earth Engine and machine learning to identify idle, vegetation, and built-up land while generating crop suitability and intercropping recommendations.",
       color: "from-blue-500/20 to-transparent",
       borderColor: "group-hover:border-blue-500/50"
     },
     {
       id: 2,
-      title: "Agricultural Supply Chain Hub",
-      author: "Rashmika",
-      icon: <Truck size={32} className="text-orange-400" />,
-      description: "Marketplace interface displaying real-time pricing for spices and connecting farmers with buyers based on verified land output.",
+      title: "Smart Marketplace & Pricing Support",
+      author: "Eranga",
+      icon: <TrendingUp size={32} className="text-orange-400" />,
+      description: "Combines live spice pricing, demand patterns, transport planning, and profit simulation to help farmers choose better markets and improve trading decisions.",
       color: "from-orange-500/20 to-transparent",
       borderColor: "group-hover:border-orange-500/50"
     },
     {
       id: 3,
-      title: "Predictive Disease & Yield",
-      author: "Chamindu",
-      icon: <ScanFace size={32} className="text-purple-400" />,
-      description: "Computer vision dashboard where farmers upload leaf images for instant grading, anomaly detection, and accurate yield forecasts.",
+      title: "Smart Predictive Stock & Alerts",
+      author: "Janakalani",
+      icon: <Package size={32} className="text-purple-400" />,
+      description: "Forecasts stock movement using historical demand behavior and inventory inputs, then produces restock guidance and shortage alerts for spice supply planning.",
       color: "from-purple-500/20 to-transparent",
       borderColor: "group-hover:border-purple-500/50"
     },
     {
       id: 4,
-      title: "Automated Documentation",
-      author: "Eranga",
-      icon: <FileText size={32} className="text-agri-emerald" />,
-      description: "Backend-integrated portal generating standardized PDF reports and comprehensive research logs for every scan performed.",
+      title: "Cultivator Intention Analyzer",
+      author: "Senudi",
+      icon: <Mic size={32} className="text-agri-emerald" />,
+      description: "A two-gated audio and interview assessment pipeline that evaluates cultivator intent, truthfulness, emotional stability, and risk before recommendation.",
       color: "from-agri-emerald/20 to-transparent",
       borderColor: "group-hover:border-agri-emerald/50"
     }
   ];
 
   return (
-    <section id="team" className="py-24 relative">
+    <section id="ecosystem" className="py-24 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <motion.h2 
@@ -61,7 +61,7 @@ const IntegrationSection = () => {
             transition={{ delay: 0.1 }}
             className="text-slate-400 max-w-2xl mx-auto text-lg"
           >
-            A unified, multi-module architecture designed by our specialized research team to address the complete agricultural lifecycle.
+            A unified four-component research architecture that links land discovery, farmer decision support, stock forecasting, and cultivator screening in one ecosystem.
           </motion.p>
         </div>
 

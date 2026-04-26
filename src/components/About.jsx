@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 import { Sprout, TrendingUp, Globe2, Bell, Target } from 'lucide-react';
 
 const impactCards = [
-  { value: '80%', title: 'Classification Accuracy', desc: 'High-precision idle land detection utilizing optimized XGBoost algorithms.', icon: <Target size={28} />, lightBg: 'bg-emerald-50', darkBg: 'dark:bg-emerald-900/20', iconColor: 'text-emerald-600 dark:text-emerald-400' },
+  { value: 'AI', title: 'Land Intelligence', desc: 'Idle land and land-cover identification powered by geospatial feature analysis and machine learning classification.', icon: <Target size={28} />, lightBg: 'bg-emerald-50', darkBg: 'dark:bg-emerald-900/20', iconColor: 'text-emerald-600 dark:text-emerald-400' },
   { value: 'Global', title: 'Scalability', desc: 'Real-time processing of 18-variable geospatial data stacks via live GEE integration.', icon: <Globe2 size={28} />, lightBg: 'bg-blue-50', darkBg: 'dark:bg-blue-900/20', iconColor: 'text-blue-600 dark:text-blue-400' },
   { value: 'Fair', title: 'Economic Empowerment', desc: 'Data-driven dynamic pricing models to ensure fair market participation for smallholder farmers.', icon: <TrendingUp size={28} />, lightBg: 'bg-amber-50', darkBg: 'dark:bg-amber-900/20', iconColor: 'text-amber-600 dark:text-amber-400' },
-  { value: 'Smart', title: 'Predictive Inventory', desc: 'Advanced stock management alerts to balance regional supply and demand efficiently.', icon: <Bell size={28} />, lightBg: 'bg-purple-50', darkBg: 'dark:bg-purple-900/20', iconColor: 'text-purple-600 dark:text-purple-400' },
+  { value: 'Safe', title: 'Cultivator Screening', desc: 'Two-stage intent and trust assessment designed to support more confident cultivator recommendation decisions.', icon: <Bell size={28} />, lightBg: 'bg-purple-50', darkBg: 'dark:bg-purple-900/20', iconColor: 'text-purple-600 dark:text-purple-400' },
 ];
 
 const About = () => {
@@ -36,7 +36,7 @@ const About = () => {
               The Smart Agri-Suite is a comprehensive, mobile-first ecosystem designed to modernize agricultural land management and market access in Sri Lanka.
             </p>
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
-              By integrating <strong className="text-agri-emerald font-bold">Google Earth Engine (GEE)</strong> with advanced machine learning, the platform identifies underutilized land, predicts crop suitability, and optimizes supply chain dynamics through dynamic pricing and intelligent stock management.
+              By integrating <strong className="text-agri-emerald font-bold">Google Earth Engine (GEE)</strong>, predictive analytics, and intelligent screening workflows, the platform identifies underutilized land, supports market pricing decisions, improves stock preparedness, and evaluates cultivator readiness before deployment.
             </p>
             {/* Mini stats */}
             <div className="flex gap-6 flex-wrap">

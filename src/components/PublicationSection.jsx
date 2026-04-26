@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // Framer motion is used for animations
 import { motion as fm, AnimatePresence as AP } from 'framer-motion';
-import { Download, FileText, X, Maximize2 } from 'lucide-react';
+import { FileText, X, Maximize2 } from 'lucide-react';
 
 const PublicationSection = () => {
   const [isPdfOpen, setIsPdfOpen] = useState(false);
@@ -78,17 +78,13 @@ const PublicationSection = () => {
                   "Smart Agri-Suite: A Globally Deployable Land Analysis Framework using Multi-Spectral Telemetry"
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-3 w-full">
+                <div className="w-full">
                   <button 
                     onClick={() => setIsPdfOpen(true)}
-                    className="flex-1 py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium flex items-center justify-center gap-2 transition-colors border border-slate-700"
+                    className="w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium flex items-center justify-center gap-2 transition-colors border border-slate-700"
                   >
                     <Maximize2 size={18} />
-                    Read Online
-                  </button>
-                  <button className="flex-1 py-3 px-4 rounded-xl bg-agri-emerald hover:bg-agri-emeraldDark text-white font-medium flex items-center justify-center gap-2 transition-colors shadow-lg shadow-agri-emerald/20">
-                    <Download size={18} />
-                    Download PDF
+                    View Paper
                   </button>
                 </div>
               </div>
@@ -156,9 +152,7 @@ const PublicationSection = () => {
               {/* Modal Footer */}
               <div className="px-6 py-4 border-t border-slate-800 bg-slate-900 flex justify-between items-center">
                 <span className="text-sm text-slate-500">Page 1 of 12</span>
-                <button className="px-4 py-2 bg-agri-emerald hover:bg-agri-emeraldDark text-white rounded-lg text-sm font-medium transition-colors">
-                  Download Full PDF
-                </button>
+                <span className="text-sm text-slate-400">View only</span>
               </div>
             </fm.div>
           </fm.div>

@@ -4,12 +4,12 @@ import { Menu, X, Leaf, Moon, Sun } from 'lucide-react';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Research', href: '#research' },
-  { label: 'Solution', href: '#solution' },
-  { label: 'Methodology', href: '#methodology' },
-  { label: 'Team', href: '#team' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Domain', href: '#domain' },
+  { label: 'Milestones', href: '#milestones' },
+  { label: 'Documents', href: '#documents' },
+  { label: 'Slides', href: '#slides' },
+  { label: 'About Us', href: '#about-us' },
+  { label: 'Contact Us', href: '#contact' },
 ];
 
 const Navbar = () => {

@@ -1,9 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown, BarChart3, MapPin, ShieldCheck } from 'lucide-react';
+import { ChevronDown, MapPin, ShieldCheck } from 'lucide-react';
 
 const stats = [
-  { value: '80%', label: 'Classification Accuracy', icon: <BarChart3 size={20} /> },
   { value: '18+', label: 'GEE Variables', icon: <MapPin size={20} /> },
   { value: '4', label: 'Core Modules', icon: <ShieldCheck size={20} /> },
 ];

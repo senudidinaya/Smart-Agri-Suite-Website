@@ -4,12 +4,12 @@ import { Smartphone, Server, Brain, Database, Cloud, Code2, Paintbrush, Flame, H
 
 const categories = [
   {
-    title: 'Frontend / Mobile',
+    title: 'Mobile Frontend',
     tools: [
-      { name: 'React.js', icon: <Code2 size={28} /> },
       { name: 'React Native', icon: <Smartphone size={28} /> },
-      { name: 'Tailwind CSS', icon: <Paintbrush size={28} /> },
-      { name: 'Framer Motion', icon: <Flame size={28} /> },
+      { name: 'Expo SDK 54', icon: <Flame size={28} /> },
+      { name: 'TypeScript', icon: <Code2 size={28} /> },
+      { name: 'Zustand', icon: <Paintbrush size={28} /> },
     ],
     gradient: 'from-blue-500 to-cyan-500',
     lightBg: 'bg-blue-50',
@@ -18,31 +18,33 @@ const categories = [
   {
     title: 'Backend & Cloud',
     tools: [
-      { name: 'Node.js', icon: <Server size={28} /> },
       { name: 'FastAPI', icon: <Code2 size={28} /> },
+      { name: 'Node.js / Express', icon: <Server size={28} /> },
       { name: 'GEE API', icon: <Cloud size={28} /> },
+      { name: 'Agora SDK', icon: <Brain size={28} /> },
     ],
     gradient: 'from-emerald-500 to-teal-500',
     lightBg: 'bg-emerald-50',
     darkBg: 'dark:bg-emerald-900/20',
   },
   {
-    title: 'Machine Learning',
+    title: 'ML, AI & Signal Processing',
     tools: [
-      { name: 'Python', icon: <Code2 size={28} /> },
       { name: 'XGBoost', icon: <Brain size={28} /> },
       { name: 'Scikit-Learn', icon: <Brain size={28} /> },
+      { name: 'librosa', icon: <Code2 size={28} /> },
+      { name: 'Groq LLM', icon: <Flame size={28} /> },
     ],
     gradient: 'from-purple-500 to-violet-500',
     lightBg: 'bg-purple-50',
     darkBg: 'dark:bg-purple-900/20',
   },
   {
-    title: 'Database & Hosting',
+    title: 'Database & Storage',
     tools: [
-      { name: 'MongoDB', icon: <Database size={28} /> },
       { name: 'PostgreSQL', icon: <HardDrive size={28} /> },
-      { name: 'Firebase', icon: <Flame size={28} /> },
+      { name: 'PostGIS', icon: <Database size={28} /> },
+      { name: 'MongoDB', icon: <Database size={28} /> },
     ],
     gradient: 'from-amber-500 to-orange-500',
     lightBg: 'bg-amber-50',
