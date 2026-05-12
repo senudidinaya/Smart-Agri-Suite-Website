@@ -50,9 +50,12 @@ const Footer = () => {
               </div>
               <div className="flex items-start gap-3">
                 <Mail size={16} className="text-agri-emerald mt-0.5 shrink-0" />
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  research@smartagrisuite.lk
-                </p>
+                <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">
+                  <li><a href="mailto:it22001498@my.sliit.lk" className="hover:text-agri-emerald transition-colors break-all">it22001498@my.sliit.lk</a></li>
+                  <li><a href="mailto:it22895332@my.sliit.lk" className="hover:text-agri-emerald transition-colors break-all">it22895332@my.sliit.lk</a></li>
+                  <li><a href="mailto:it22607478@my.sliit.lk" className="hover:text-agri-emerald transition-colors break-all">it22607478@my.sliit.lk</a></li>
+                  <li><a href="mailto:it22032638@my.sliit.lk" className="hover:text-agri-emerald transition-colors break-all">it22032638@my.sliit.lk</a></li>
+                </ul>
               </div>
             </div>
           </div>

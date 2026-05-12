@@ -6,7 +6,7 @@ const milestones = [
   {
     id: 'proposal',
     label: 'Project Proposal',
-    date: 'TBD',
+    date: 'August 31, 2025',
     marks: '10%',
     description:
       'The Project Proposal milestone requires the team to present the project idea, problem statement, objectives, and a high-level plan to the panel. This includes the initial literature survey and justification for the research direction.',
@@ -17,7 +17,7 @@ const milestones = [
   {
     id: 'pp1',
     label: 'Progress Presentation 1',
-    date: 'TBD',
+    date: 'December 15, 2025',
     marks: '15%',
     description:
       'Progress Presentation 1 evaluates the work completed in the first phase, including system design, data collection, initial model development, and early prototyping. The team demonstrates measurable progress toward the final deliverable.',
@@ -28,7 +28,7 @@ const milestones = [
   {
     id: 'pp2',
     label: 'Progress Presentation 2',
-    date: 'TBD',
+    date: 'March 10, 2026',
     marks: '18%',
     description:
       'Progress Presentation 2 covers the second phase of development, including completed module implementations, integration results, and testing outcomes. The panel evaluates technical depth and research validity at this stage.',
@@ -39,7 +39,7 @@ const milestones = [
   {
     id: 'final',
     label: 'Final Assessment',
-    date: 'TBD',
+    date: 'May 4, 2026',
     marks: '40%',
     description:
       'The Final Assessment is the most heavily weighted milestone. The team presents the fully integrated system, research findings, and evaluation results. A comprehensive final report and working demonstration are required.',
@@ -50,7 +50,7 @@ const milestones = [
   {
     id: 'viva',
     label: 'Viva',
-    date: 'TBD',
+    date: 'May 4, 2026',
     marks: '17%',
     description:
       'The Viva is an individual oral examination where each team member defends their contribution to the project. Examiners assess understanding of the research domain, technical decisions made, and individual ownership of components.',

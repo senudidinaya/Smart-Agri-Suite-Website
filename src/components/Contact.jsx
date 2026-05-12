@@ -31,7 +31,12 @@ const Contact = () => {
               <div className="p-3.5 rounded-2xl bg-white dark:bg-slate-800 text-blue-500 shadow-md border border-gray-100 dark:border-slate-700 shrink-0"><Mail size={22} /></div>
               <div>
                 <h4 className="font-bold text-slate-800 dark:text-white mb-1">Email</h4>
-                <p className="text-slate-600 dark:text-slate-400 text-sm">research@smartagrisuite.lk</p>
+                <ul className="text-slate-600 dark:text-slate-400 text-sm space-y-1">
+                  <li><span className="font-semibold text-slate-700 dark:text-slate-300">Eranga Bowatte:</span> <a href="mailto:it22001498@my.sliit.lk" className="hover:text-agri-emerald transition-colors break-all">it22001498@my.sliit.lk</a></li>
+                  <li><span className="font-semibold text-slate-700 dark:text-slate-300">Chamindu Navod:</span> <a href="mailto:it22895332@my.sliit.lk" className="hover:text-agri-emerald transition-colors break-all">it22895332@my.sliit.lk</a></li>
+                  <li><span className="font-semibold text-slate-700 dark:text-slate-300">Janakalani Maheepala:</span> <a href="mailto:it22607478@my.sliit.lk" className="hover:text-agri-emerald transition-colors break-all">it22607478@my.sliit.lk</a></li>
+                  <li><span className="font-semibold text-slate-700 dark:text-slate-300">Senudi Rupasinghe:</span> <a href="mailto:it22032638@my.sliit.lk" className="hover:text-agri-emerald transition-colors break-all">it22032638@my.sliit.lk</a></li>
+                </ul>
               </div>
             </div>
             <div className="flex items-start gap-4">

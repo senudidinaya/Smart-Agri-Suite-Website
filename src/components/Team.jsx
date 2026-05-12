@@ -1,6 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { GraduationCap, Users, Mail } from 'lucide-react';
+import erangaPhoto from '../assets/Eranga Bowatte.jpeg';
+import chaminduPhoto from '../assets/Chamindu Navod.jpeg';
+import janakalaniPhoto from '../assets/Janakalani Maheepala.jpeg';
+import senudiPhoto from '../assets/Senudi Rupasinghe.jpeg';
 
 const supervisors = [
   { name: 'Mr. Dhammika De Silva', role: 'Project Supervisor', email: 'dhammika.d@sliit.lk' },
@@ -8,10 +12,10 @@ const supervisors = [
 ];
 
 const team = [
-  { name: 'Eranga Bowatte', role: 'Team Leader · Pricing Component', initials: 'EB', gradient: 'from-agri-emerald to-teal-500', email: 'eranga.b@example.com' },
-  { name: 'Chamindu Navod', role: 'Team Member · Idle Land Component', initials: 'CN', gradient: 'from-blue-500 to-cyan-500', email: 'chamindu.n@example.com' },
-  { name: 'Janakalani Maheepala', role: 'Team Member · Stock Component', initials: 'JM', gradient: 'from-purple-500 to-violet-500', email: 'janakalani.m@example.com' },
-  { name: 'Senudi Rupasinghe', role: 'Team Member · Cultivator Intent Component', initials: 'SR', gradient: 'from-amber-500 to-orange-500', email: 'senudi.r@example.com' },
+  { name: 'Eranga Bowatte', role: 'Team Leader · Pricing Component', initials: 'EB', gradient: 'from-agri-emerald to-teal-500', email: 'it22001498@my.sliit.lk', image: erangaPhoto },
+  { name: 'Chamindu Navod', role: 'Team Member · Idle Land Component', initials: 'CN', gradient: 'from-blue-500 to-cyan-500', email: 'it22895332@my.sliit.lk', image: chaminduPhoto },
+  { name: 'Janakalani Maheepala', role: 'Team Member · Stock Component', initials: 'JM', gradient: 'from-purple-500 to-violet-500', email: 'it22607478@my.sliit.lk', image: janakalaniPhoto },
+  { name: 'Senudi Rupasinghe', role: 'Team Member · Cultivator Intent Component', initials: 'SR', gradient: 'from-amber-500 to-orange-500', email: 'it22032638@my.sliit.lk', image: senudiPhoto },
 ];
 
 const Team = () => {
@@ -88,8 +92,12 @@ const Team = () => {
                 whileHover={{ y: -8 }}
                 className="p-6 rounded-3xl bg-white/80 dark:bg-slate-800/60 backdrop-blur-sm border border-gray-100 dark:border-slate-700/50 shadow-lg hover:shadow-2xl transition-all text-center"
               >
-                <div className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br ${member.gradient} flex items-center justify-center shadow-lg`}>
-                  <span className="text-white font-black text-lg">{member.initials}</span>
+                <div className={`w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br ${member.gradient} flex items-center justify-center shadow-lg overflow-hidden`}>
+                  {member.image ? (
+                    <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+                  ) : (
+                    <span className="text-white font-black text-xl">{member.initials}</span>
+                  )}
                 </div>
                 <h4 className="text-lg font-bold text-slate-800 dark:text-white mb-1">{member.name}</h4>
                 <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-3">{member.role}</p>

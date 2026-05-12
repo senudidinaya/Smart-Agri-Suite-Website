@@ -35,15 +35,13 @@ const Hero = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-agri-emerald opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-agri-emerald"></span>
               </span>
-              Research Project 2026 · SLIIT
+              Research Project 2026 · SLIIT · 25-26J-248
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight mb-6">
-              <span className="text-slate-800 dark:text-white">Planetary-Scale</span><br />
-              <span className="text-gradient">Intelligence</span>
-              <span className="text-slate-800 dark:text-white"> for</span><br />
-              <span className="text-slate-800 dark:text-white">Sustainable </span>
-              <span className="text-gradient-gold">Agriculture</span>
+              <span className="text-gradient">Smart Agri-Suite</span><br />
+              <span className="text-slate-800 dark:text-white">for Sustainable</span><br />
+              <span className="text-gradient-gold">Farming</span>
             </h1>
 
             <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-10 max-w-2xl font-medium">

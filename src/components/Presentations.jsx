@@ -4,6 +4,7 @@ import { Presentation, ExternalLink, Clock } from 'lucide-react';
 import proposalPresentationPdf from '../assets/proposal presentation.pdf';
 import progressPresentation1Pdf from '../assets/Progress Presentation - I.pdf';
 import progressPresentation2Pdf from '../assets/Progress Presentation - II.pdf';
+import finalPresentationPdf from '../assets/Final Presentation.pdf';
 
 const slides = [
   {
@@ -33,8 +34,8 @@ const slides = [
   {
     label: 'Final Presentation',
     description: 'Final project defence slides showcasing the complete system, evaluation results, contributions, and conclusions.',
-    status: 'pending',
-    link: '#',
+    status: 'available',
+    link: finalPresentationPdf,
     gradient: 'from-amber-500 to-orange-500',
     lightBg: 'bg-amber-50 dark:bg-amber-900/20',
   },
