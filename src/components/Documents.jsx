@@ -31,7 +31,7 @@ const documents = [
   {
     category: 'Final Documents',
     items: [
-      { name: 'Final Report – Main', status: 'pending', link: '#' },
+      { name: 'Final Report – Group', status: 'pending', link: '#' },
       { name: 'Final Report – Eranga Bowatte', status: 'pending', link: '#' },
       { name: 'Final Report – Chamindu Navod', status: 'pending', link: '#' },
       { name: 'Final Report – Janakalani Maheepala', status: 'pending', link: '#' },
