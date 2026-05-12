@@ -4,18 +4,12 @@ import { FileText, ExternalLink, Clock } from 'lucide-react';
 
 const documents = [
   {
-    category: 'Project Charter',
-    items: [
-      { name: 'Project Charter', status: 'available', link: '#' },
-    ],
-  },
-  {
-    category: 'Proposal Document',
+    category: 'Proposal Documents',
     items: [
       {
-        name: 'Proposal Document',
+        name: 'Proposal Documents',
         status: 'available',
-        link: 'https://mysliit.sharepoint.com/:f:/s/CDAPSubmissionCloud/IgAShUMSAXhPRYJ_cYH3r2n-ASDO_j2PRIMgQZUn33I1DJw?e=F9B9Lu',
+        link: 'https://drive.google.com/drive/folders/1onXGR2gM0NJ6apOavrEbPe4rkz5YppRV?usp=sharing',
       },
     ],
   },
@@ -25,17 +19,17 @@ const documents = [
       {
         name: 'Checklist 1',
         status: 'available',
-        link: 'https://mysliit.sharepoint.com/:f:/s/CDAPSubmissionCloud/IgD0T0czw1lAQJE11CeUCHV1AbXn_Q_2Id2XLjiSIVouLgo?e=VNfV5r',
+        link: 'https://drive.google.com/file/d/1dpRtInCSXO7BWb-QAd6ndANnEsJ-4etK/view?usp=sharing',
       },
       {
         name: 'Checklist 2',
         status: 'available',
-        link: 'https://mysliit.sharepoint.com/:f:/s/CDAPSubmissionCloud/IgCeQBF9_M7UR6wpkp35agDqASB97b9XUw62fKpmprHRq34?e=upt9QH',
+        link: 'https://drive.google.com/file/d/1t2TOxiimEjRyAplmznjwtrwWNI_cPiir/view?usp=sharing',
       },
     ],
   },
   {
-    category: 'Final Document',
+    category: 'Final Documents',
     items: [
       { name: 'Final Report – Main', status: 'pending', link: '#' },
       { name: 'Final Report – Eranga Bowatte', status: 'pending', link: '#' },

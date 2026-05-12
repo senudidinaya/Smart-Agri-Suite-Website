@@ -43,9 +43,9 @@ const milestones = [
     marks: '40%',
     description:
       'The Final Assessment is the most heavily weighted milestone. The team presents the fully integrated system, research findings, and evaluation results. A comprehensive final report and working demonstration are required.',
-    status: 'Upcoming',
-    statusColor: 'text-amber-600 dark:text-amber-400',
-    statusBg: 'bg-amber-50 dark:bg-amber-900/20',
+    status: 'Completed',
+    statusColor: 'text-emerald-600 dark:text-emerald-400',
+    statusBg: 'bg-emerald-50 dark:bg-emerald-900/20',
   },
   {
     id: 'viva',
@@ -54,9 +54,9 @@ const milestones = [
     marks: '17%',
     description:
       'The Viva is an individual oral examination where each team member defends their contribution to the project. Examiners assess understanding of the research domain, technical decisions made, and individual ownership of components.',
-    status: 'Upcoming',
-    statusColor: 'text-purple-600 dark:text-purple-400',
-    statusBg: 'bg-purple-50 dark:bg-purple-900/20',
+    status: 'Completed',
+    statusColor: 'text-emerald-600 dark:text-emerald-400',
+    statusBg: 'bg-emerald-50 dark:bg-emerald-900/20',
   },
 ];
 

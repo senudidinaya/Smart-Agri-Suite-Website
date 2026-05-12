@@ -88,11 +88,6 @@ const IntegrationSection = () => {
                 <p className="text-slate-400 text-sm mb-8 flex-1 leading-relaxed">
                   {mod.description}
                 </p>
-                
-                <div className="flex items-center gap-2 text-sm font-medium text-slate-300 group-hover:text-white transition-colors mt-auto">
-                  <span>Explore Module</span>
-                  <ArrowRight size={16} className="transform group-hover:translate-x-1 transition-transform" />
-                </div>
               </div>
             </motion.div>
           ))}
