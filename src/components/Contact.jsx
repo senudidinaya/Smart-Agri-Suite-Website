@@ -1,8 +1,27 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import { Mail, MapPin, Phone, Send, CheckCircle, AlertCircle, Loader } from 'lucide-react';
+import emailjs from '@emailjs/browser';
+
+const SERVICE_ID = 'service_4or1hro';
+const TEMPLATE_ID = 'template_8slpwi7';
+const PUBLIC_KEY = 'Qp7kUF4ouIB4remSm';
 
 const Contact = () => {
+  const formRef = useRef();
+  const [status, setStatus] = useState('idle'); // idle | sending | success | error
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setStatus('sending');
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
+      .then(() => {
+        setStatus('success');
+        formRef.current.reset();
+      })
+      .catch(() => setStatus('error'));
+  };
+
   return (
     <section id="contact" className="section-padding relative overflow-hidden">
       {/* Background */}
@@ -49,27 +68,45 @@ const Contact = () => {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="md:col-span-3">
-            <form className="p-8 rounded-3xl bg-white/90 dark:bg-slate-800/80 backdrop-blur-md border border-gray-100 dark:border-slate-700/50 shadow-xl space-y-5">
+            <form ref={formRef} onSubmit={handleSubmit} className="p-8 rounded-3xl bg-white/90 dark:bg-slate-800/80 backdrop-blur-md border border-gray-100 dark:border-slate-700/50 shadow-xl space-y-5">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Full Name</label>
-                  <input type="text" placeholder="John Doe" className="w-full px-4 py-3.5 rounded-xl bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 focus:outline-none focus:border-agri-emerald focus:ring-2 focus:ring-agri-emerald/20 transition-all text-slate-800 dark:text-white" />
+                  <input required name="from_name" type="text" placeholder="John Doe" className="w-full px-4 py-3.5 rounded-xl bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 focus:outline-none focus:border-agri-emerald focus:ring-2 focus:ring-agri-emerald/20 transition-all text-slate-800 dark:text-white" />
                 </div>
                 <div>
                   <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Email Address</label>
-                  <input type="email" placeholder="john@example.com" className="w-full px-4 py-3.5 rounded-xl bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 focus:outline-none focus:border-agri-emerald focus:ring-2 focus:ring-agri-emerald/20 transition-all text-slate-800 dark:text-white" />
+                  <input required name="from_email" type="email" placeholder="john@example.com" className="w-full px-4 py-3.5 rounded-xl bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 focus:outline-none focus:border-agri-emerald focus:ring-2 focus:ring-agri-emerald/20 transition-all text-slate-800 dark:text-white" />
                 </div>
               </div>
               <div>
                 <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Subject</label>
-                <input type="text" placeholder="Research Collaboration" className="w-full px-4 py-3.5 rounded-xl bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 focus:outline-none focus:border-agri-emerald focus:ring-2 focus:ring-agri-emerald/20 transition-all text-slate-800 dark:text-white" />
+                <input required name="subject" type="text" placeholder="Research Collaboration" className="w-full px-4 py-3.5 rounded-xl bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 focus:outline-none focus:border-agri-emerald focus:ring-2 focus:ring-agri-emerald/20 transition-all text-slate-800 dark:text-white" />
               </div>
               <div>
                 <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Your Message</label>
-                <textarea rows="4" placeholder="Write your message here..." className="w-full px-4 py-3.5 rounded-xl bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 focus:outline-none focus:border-agri-emerald focus:ring-2 focus:ring-agri-emerald/20 transition-all text-slate-800 dark:text-white resize-none"></textarea>
+                <textarea required name="message" rows="4" placeholder="Write your message here..." className="w-full px-4 py-3.5 rounded-xl bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 focus:outline-none focus:border-agri-emerald focus:ring-2 focus:ring-agri-emerald/20 transition-all text-slate-800 dark:text-white resize-none"></textarea>
               </div>
-              <motion.button type="button" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full py-4 rounded-xl bg-gradient-to-r from-agri-emerald to-agri-leaf text-white font-bold flex items-center justify-center gap-2 shadow-xl shadow-agri-emerald/20 hover:shadow-agri-emerald/40 transition-shadow">
-                <Send size={18} /> Send Message
+
+              {status === 'success' && (
+                <div className="flex items-center gap-2 px-4 py-3 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-700 text-emerald-700 dark:text-emerald-400 text-sm font-semibold">
+                  <CheckCircle size={16} /> Message sent! We'll get back to you soon.
+                </div>
+              )}
+              {status === 'error' && (
+                <div className="flex items-center gap-2 px-4 py-3 rounded-xl bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-700 text-red-600 dark:text-red-400 text-sm font-semibold">
+                  <AlertCircle size={16} /> Something went wrong. Please try again.
+                </div>
+              )}
+
+              <motion.button
+                type="submit"
+                disabled={status === 'sending'}
+                whileHover={{ scale: status === 'sending' ? 1 : 1.02 }}
+                whileTap={{ scale: status === 'sending' ? 1 : 0.98 }}
+                className="w-full py-4 rounded-xl bg-gradient-to-r from-agri-emerald to-agri-leaf text-white font-bold flex items-center justify-center gap-2 shadow-xl shadow-agri-emerald/20 hover:shadow-agri-emerald/40 transition-shadow disabled:opacity-60 disabled:cursor-not-allowed"
+              >
+                {status === 'sending' ? <><Loader size={18} className="animate-spin" /> Sending...</> : <><Send size={18} /> Send Message</>}
               </motion.button>
             </form>
           </motion.div>
