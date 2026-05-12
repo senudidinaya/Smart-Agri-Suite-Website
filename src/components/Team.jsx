@@ -5,10 +5,11 @@ import erangaPhoto from '../assets/Eranga Bowatte.jpeg';
 import chaminduPhoto from '../assets/Chamindu Navod.jpeg';
 import janakalaniPhoto from '../assets/Janakalani Maheepala.jpeg';
 import senudiPhoto from '../assets/Senudi Rupasinghe.jpeg';
+import dhammikaDeSilvaPhoto from '../assets/Mr. Dhammika De Silva.jpeg';
 
 const supervisors = [
-  { name: 'Mr. Dhammika De Silva', role: 'Project Supervisor', email: 'dhammika.d@sliit.lk' },
-  { name: 'Dr. Lakmini Abeywardhana', role: 'Co-Supervisor', email: 'lakmini.a@sliit.lk' },
+  { name: 'Mr. Dhammika De Silva', role: 'Project Supervisor', email: 'dhammika.d@sliit.lk', image: dhammikaDeSilvaPhoto },
+  { name: 'Dr. Lakmini Abeywardhana', role: 'Co-Supervisor', email: 'lakmini.a@sliit.lk', image: null },
 ];
 
 const team = [
@@ -62,8 +63,12 @@ const Team = () => {
                 whileHover={{ y: -8 }}
                 className="w-full sm:w-80 p-8 rounded-3xl bg-white/80 dark:bg-slate-800/60 backdrop-blur-sm border-2 border-agri-emerald/20 dark:border-agri-emerald/30 shadow-lg hover:shadow-2xl hover:border-agri-emerald/40 transition-all text-center"
               >
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-agri-emerald to-agri-leaf flex items-center justify-center shadow-xl shadow-agri-emerald/20">
-                  <GraduationCap size={36} className="text-white" />
+                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-agri-emerald to-agri-leaf flex items-center justify-center shadow-xl shadow-agri-emerald/20 overflow-hidden">
+                  {sup.image ? (
+                    <img src={sup.image} alt={sup.name} className="w-full h-full object-cover" />
+                  ) : (
+                    <GraduationCap size={36} className="text-white" />
+                  )}
                 </div>
                 <h4 className="text-xl font-bold text-slate-800 dark:text-white mb-1">{sup.name}</h4>
                 <p className="text-agri-emerald font-semibold text-sm uppercase tracking-wider mb-3">{sup.role}</p>
